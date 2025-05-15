@@ -31,7 +31,7 @@ export default function Header() {
     <header
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 py-4",
-        isScrolled ? "bg-card/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+        isScrolled ? "bg-card/90 backdrop-blur-md shadow-md border-b border-white/5" : "bg-transparent"
       )}
     >
       <div className="container mx-auto flex justify-between items-center">
@@ -43,7 +43,7 @@ export default function Header() {
             />
             <span className="font-bold text-2xl">MetaCart</span>
           </a>
-          <span className="text-xs bg-metacart-soft-blue px-2 py-1 rounded-md ml-2 hidden md:block">
+          <span className="text-xs bg-metacart-blue/20 px-2 py-1 rounded-md ml-2 hidden md:block">
             Web3 Dropshipping
           </span>
         </div>
@@ -62,7 +62,7 @@ export default function Header() {
         <div className="hidden md:flex items-center space-x-4">
           <Button
             variant="outline"
-            className="wallet-btn bg-gradient-to-r from-metacart-blue-bright to-metacart-blue-sky hover:shadow-xl"
+            className="wallet-btn bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white"
             onClick={() => console.log("Connect wallet")}
           >
             <Wallet className="h-4 w-4 mr-2" /> Connect Wallet
@@ -87,7 +87,7 @@ export default function Header() {
 
       {/* Mobile Navigation Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-md shadow-lg absolute top-full left-0 w-full py-4 animate-fade-in">
+        <div className="md:hidden bg-card/95 backdrop-blur-md shadow-lg absolute top-full left-0 w-full py-4 animate-fade-in border-t border-white/5">
           <div className="container mx-auto flex flex-col space-y-4">
             <a href="#" className="nav-link font-medium p-2" onClick={toggleMenu}>Home</a>
             <a href="#how-it-works" className="nav-link font-medium p-2" onClick={toggleMenu}>How It Works</a>
@@ -99,7 +99,7 @@ export default function Header() {
             <div className="flex flex-col space-y-3 pt-4">
               <Button
                 variant="outline"
-                className="wallet-btn bg-gradient-to-r from-metacart-blue-bright to-metacart-blue-sky hover:shadow-xl justify-center"
+                className="wallet-btn bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white justify-center"
                 onClick={() => {
                   console.log("Connect wallet");
                   toggleMenu();

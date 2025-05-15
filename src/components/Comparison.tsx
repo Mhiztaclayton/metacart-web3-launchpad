@@ -31,7 +31,7 @@ const Comparison = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-metacart-soft-blue/20">
+    <section className="py-20 px-4 bg-secondary/30">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="section-title">Why Choose MetaCart?</h2>
@@ -57,7 +57,7 @@ const Comparison = () => {
               {comparisonData.map((item, index) => (
                 <tr 
                   key={index} 
-                  className={index < comparisonData.length - 1 ? "border-b border-gray-100" : ""}
+                  className={index < comparisonData.length - 1 ? "border-b border-border/30" : ""}
                 >
                   <td className="p-4 font-medium">{item.feature}</td>
                   <td className="p-4">

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ShoppingCart, Wallet, FileText } from 'lucide-react';
 
@@ -24,7 +25,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-20 px-4 bg-gradient-to-b from-background to-metacart-soft-blue/20">
+    <section id="how-it-works" className="py-20 px-4 bg-gradient-to-b from-background to-card">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="section-title">How It Works</h2>
@@ -64,7 +65,7 @@ const HowItWorks = () => {
           
           <div className="relative h-16 mb-4">
             <div className="absolute inset-0 flex items-center">
-              <div className="h-1 w-full bg-metacart-soft-blue rounded-full"></div>
+              <div className="h-1 w-full bg-metacart-blue/30 rounded-full"></div>
             </div>
             <div className="absolute inset-0 flex justify-between items-center">
               <div className="w-8 h-8 bg-metacart-blue rounded-full flex items-center justify-center text-white">
@@ -92,7 +93,7 @@ const HowItWorks = () => {
           </div>
           
           <div className="mt-8 text-center">
-            <button className="bg-metacart-blue/10 hover:bg-metacart-blue/20 text-metacart-blue font-medium py-2 px-4 rounded-lg text-sm transition-colors">
+            <button className="bg-metacart-blue/20 hover:bg-metacart-blue/30 text-metacart-blue font-medium py-2 px-4 rounded-lg text-sm transition-colors">
               Try Demo Flow
             </button>
           </div>

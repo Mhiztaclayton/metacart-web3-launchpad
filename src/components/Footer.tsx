@@ -4,7 +4,7 @@ import { ShoppingCart, Twitter, Globe } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-gray-800 text-white">
+    <footer id="contact" className="bg-secondary/80">
       <div className="container mx-auto py-16 px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Logo and Description */}
@@ -58,7 +58,7 @@ const Footer = () => {
               <input 
                 type="email" 
                 placeholder="Your email" 
-                className="px-4 py-2 rounded-l-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-metacart-blue w-full"
+                className="px-4 py-2 rounded-l-lg bg-background border border-border focus:outline-none focus:border-metacart-blue w-full"
               />
               <button className="bg-metacart-blue hover:bg-metacart-blue-secondary px-4 py-2 rounded-r-lg transition-colors">
                 Subscribe
@@ -67,17 +67,17 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-700 mt-12 pt-8 text-gray-400 text-sm flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-white/10 mt-12 pt-8 text-gray-400 text-sm flex flex-col md:flex-row justify-between items-center">
           <div>
             © {new Date().getFullYear()} MetaCart. All rights reserved.
           </div>
           <div className="mt-4 md:mt-0">
-            Powered by <a href="#" className="text-metacart-blue-light hover:text-white transition-colors">Sui Blockchain</a>
+            Powered by <a href="#" className="text-metacart-blue hover:text-white transition-colors">Sui Blockchain</a>
           </div>
         </div>
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;
