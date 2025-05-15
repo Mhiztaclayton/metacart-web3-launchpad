@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Shop & Sell Globally with 
+              Shop & Sell with 
               <span className="gradient-text block mt-2">Crypto</span>
             </h1>
             
