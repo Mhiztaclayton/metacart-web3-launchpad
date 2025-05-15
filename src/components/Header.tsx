@@ -62,7 +62,7 @@ export default function Header() {
         <div className="hidden md:flex items-center space-x-4">
           <Button
             variant="outline"
-            className="wallet-btn"
+            className="wallet-btn bg-gradient-to-r from-metacart-blue-bright to-metacart-blue-sky hover:shadow-xl"
             onClick={() => console.log("Connect wallet")}
           >
             <Wallet className="h-4 w-4 mr-2" /> Connect Wallet
@@ -99,7 +99,7 @@ export default function Header() {
             <div className="flex flex-col space-y-3 pt-4">
               <Button
                 variant="outline"
-                className="wallet-btn justify-center"
+                className="wallet-btn bg-gradient-to-r from-metacart-blue-bright to-metacart-blue-sky hover:shadow-xl justify-center"
                 onClick={() => {
                   console.log("Connect wallet");
                   toggleMenu();
