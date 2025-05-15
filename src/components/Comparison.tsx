@@ -43,11 +43,11 @@ const Comparison = () => {
         <div className="overflow-x-auto glass-card p-6">
           <table className="w-full min-w-[600px] border-collapse">
             <thead>
-              <tr className="border-b border-metacart-purple/20">
+              <tr className="border-b border-metacart-blue/20">
                 <th className="p-4 text-left">Feature</th>
                 <th className="p-4 text-left">
                   <div className="flex items-center">
-                    <span className="text-metacart-purple font-bold">MetaCart (Web3)</span>
+                    <span className="text-metacart-blue font-bold">MetaCart (Web3)</span>
                   </div>
                 </th>
                 <th className="p-4 text-left">Traditional Dropshipping</th>
@@ -62,7 +62,7 @@ const Comparison = () => {
                   <td className="p-4 font-medium">{item.feature}</td>
                   <td className="p-4">
                     <div className="flex items-center">
-                      <div className="w-3 h-3 rounded-full bg-metacart-purple mr-2"></div>
+                      <div className="w-3 h-3 rounded-full bg-metacart-blue mr-2"></div>
                       <span>{item.metaCart}</span>
                     </div>
                   </td>

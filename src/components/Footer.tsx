@@ -4,7 +4,7 @@ import { ShoppingCart, Twitter, Globe } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-metacart-purple-dark text-white">
+    <footer id="contact" className="bg-gray-800 text-white">
       <div className="container mx-auto py-16 px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Logo and Description */}
@@ -58,9 +58,9 @@ const Footer = () => {
               <input 
                 type="email" 
                 placeholder="Your email" 
-                className="px-4 py-2 rounded-l-lg bg-metacart-purple-dark border border-gray-600 focus:outline-none focus:border-metacart-purple w-full"
+                className="px-4 py-2 rounded-l-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-metacart-blue w-full"
               />
-              <button className="bg-metacart-purple hover:bg-metacart-purple-secondary px-4 py-2 rounded-r-lg transition-colors">
+              <button className="bg-metacart-blue hover:bg-metacart-blue-secondary px-4 py-2 rounded-r-lg transition-colors">
                 Subscribe
               </button>
             </div>
@@ -72,7 +72,7 @@ const Footer = () => {
             © {new Date().getFullYear()} MetaCart. All rights reserved.
           </div>
           <div className="mt-4 md:mt-0">
-            Powered by <a href="#" className="text-metacart-purple-light hover:text-white transition-colors">Sui Blockchain</a>
+            Powered by <a href="#" className="text-metacart-blue-light hover:text-white transition-colors">Sui Blockchain</a>
           </div>
         </div>
       </div>

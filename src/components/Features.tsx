@@ -5,17 +5,17 @@ import { ShoppingCart, Package, Globe, Link, Coins, Shield, Calendar, FileText, 
 const Features = () => {
   const buyerFeatures = [
     {
-      icon: <Coins className="h-10 w-10 text-metacart-purple" />,
+      icon: <Coins className="h-10 w-10 text-metacart-blue" />,
       title: "Pay with Crypto",
       description: "Use SUI, USDC, or MetaCart Token for all purchases"
     },
     {
-      icon: <FileText className="h-10 w-10 text-metacart-purple" />,
+      icon: <FileText className="h-10 w-10 text-metacart-blue" />,
       title: "NFT Order Tracking",
       description: "Every purchase mints a verifiable NFT receipt"
     },
     {
-      icon: <Globe className="h-10 w-10 text-metacart-purple" />,
+      icon: <Globe className="h-10 w-10 text-metacart-blue" />,
       title: "Global Access",
       description: "Shop from anywhere with no regional restrictions"
     }
@@ -23,17 +23,17 @@ const Features = () => {
 
   const vendorFeatures = [
     {
-      icon: <Link className="h-10 w-10 text-metacart-purple" />,
+      icon: <Link className="h-10 w-10 text-metacart-blue" />,
       title: "Decentralized Listings",
       description: "Mint products as on-chain objects with full ownership"
     },
     {
-      icon: <Coins className="h-10 w-10 text-metacart-purple" />,
+      icon: <Coins className="h-10 w-10 text-metacart-blue" />,
       title: "Instant Settlements",
       description: "Get automatic payouts upon delivery confirmation"
     },
     {
-      icon: <Shield className="h-10 w-10 text-metacart-purple" />,
+      icon: <Shield className="h-10 w-10 text-metacart-blue" />,
       title: "No Platform Censorship",
       description: "List freely with smart contract security guarantees"
     }

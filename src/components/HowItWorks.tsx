@@ -5,19 +5,19 @@ import { ShoppingCart, Wallet, FileText } from 'lucide-react';
 const HowItWorks = () => {
   const steps = [
     {
-      icon: <ShoppingCart className="h-12 w-12 text-metacart-purple" />,
+      icon: <ShoppingCart className="h-12 w-12 text-metacart-blue" />,
       step: "1️⃣",
       title: "Browse & Add to Cart",
       description: "Explore decentralized product listings from global vendors"
     },
     {
-      icon: <Wallet className="h-12 w-12 text-metacart-purple" />,
+      icon: <Wallet className="h-12 w-12 text-metacart-blue" />,
       step: "2️⃣",
       title: "Checkout with Crypto",
       description: "Pay with SUI or USDC. Funds are locked in escrow until delivery"
     },
     {
-      icon: <FileText className="h-12 w-12 text-metacart-purple" />,
+      icon: <FileText className="h-12 w-12 text-metacart-blue" />,
       step: "3️⃣",
       title: "Receive NFT & Track Order",
       description: "Your NFT updates status from Shipped to Delivered, triggering vendor payment"
@@ -25,7 +25,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-20 px-4 bg-gradient-to-b from-white to-metacart-soft-purple/20">
+    <section id="how-it-works" className="py-20 px-4 bg-gradient-to-b from-white to-metacart-soft-blue/20">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="section-title">How It Works</h2>
@@ -37,7 +37,7 @@ const HowItWorks = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {steps.map((step, index) => (
             <div key={index} className="step-card">
-              <div className="absolute -top-3 -left-3 bg-metacart-purple text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
+              <div className="absolute -top-3 -left-3 bg-metacart-blue text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
                 {index + 1}
               </div>
               <div className="mb-5">{step.icon}</div>
@@ -46,8 +46,8 @@ const HowItWorks = () => {
               
               {/* Step connector - only for first two columns on desktop */}
               {index < 2 && (
-                <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-[2px] bg-metacart-purple-light">
-                  <div className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-metacart-purple rounded-full"></div>
+                <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-[2px] bg-metacart-blue-light">
+                  <div className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-metacart-blue rounded-full"></div>
                 </div>
               )}
             </div>
@@ -65,16 +65,16 @@ const HowItWorks = () => {
           
           <div className="relative h-16 mb-4">
             <div className="absolute inset-0 flex items-center">
-              <div className="h-1 w-full bg-metacart-soft-purple rounded-full"></div>
+              <div className="h-1 w-full bg-metacart-soft-blue rounded-full"></div>
             </div>
             <div className="absolute inset-0 flex justify-between items-center">
-              <div className="w-8 h-8 bg-metacart-purple rounded-full flex items-center justify-center text-white">
+              <div className="w-8 h-8 bg-metacart-blue rounded-full flex items-center justify-center text-white">
                 <Wallet size={16} />
               </div>
-              <div className="w-8 h-8 bg-metacart-purple-secondary rounded-full flex items-center justify-center text-white">
+              <div className="w-8 h-8 bg-metacart-blue-secondary rounded-full flex items-center justify-center text-white">
                 <ShoppingCart size={16} />
               </div>
-              <div className="w-8 h-8 bg-metacart-purple-tertiary rounded-full flex items-center justify-center text-white">
+              <div className="w-8 h-8 bg-metacart-blue-tertiary rounded-full flex items-center justify-center text-white">
                 <FileText size={16} />
               </div>
             </div>
@@ -93,7 +93,7 @@ const HowItWorks = () => {
           </div>
           
           <div className="mt-8 text-center">
-            <button className="bg-metacart-purple/10 hover:bg-metacart-purple/20 text-metacart-purple font-medium py-2 px-4 rounded-lg text-sm transition-colors">
+            <button className="bg-metacart-blue/10 hover:bg-metacart-blue/20 text-metacart-blue font-medium py-2 px-4 rounded-lg text-sm transition-colors">
               Try Demo Flow
             </button>
           </div>

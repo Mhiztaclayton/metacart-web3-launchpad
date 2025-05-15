@@ -38,12 +38,12 @@ export default function Header() {
         <div className="flex items-center">
           <a href="#" className="flex items-center">
             <ShoppingCart 
-              className="h-8 w-8 text-metacart-purple mr-2" 
+              className="h-8 w-8 text-metacart-blue mr-2" 
               strokeWidth={2}
             />
             <span className="font-bold text-2xl">MetaCart</span>
           </a>
-          <span className="text-xs bg-metacart-soft-purple px-2 py-1 rounded-md ml-2 hidden md:block">
+          <span className="text-xs bg-metacart-soft-blue px-2 py-1 rounded-md ml-2 hidden md:block">
             Web3 Dropshipping
           </span>
         </div>

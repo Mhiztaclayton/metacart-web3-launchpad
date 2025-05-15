@@ -30,22 +30,22 @@ const CTA = () => {
             </Button>
           </div>
           
-          <div className="mt-12 pt-10 border-t border-metacart-soft-purple">
+          <div className="mt-12 pt-10 border-t border-metacart-soft-blue">
             <div className="flex flex-wrap gap-8 justify-center">
               <div className="text-center">
-                <div className="font-bold text-3xl text-metacart-purple">0%</div>
+                <div className="font-bold text-3xl text-metacart-blue">0%</div>
                 <div className="text-sm text-muted-foreground">Platform Fees</div>
               </div>
               <div className="text-center">
-                <div className="font-bold text-3xl text-metacart-purple">100%</div>
+                <div className="font-bold text-3xl text-metacart-blue">100%</div>
                 <div className="text-sm text-muted-foreground">Decentralized</div>
               </div>
               <div className="text-center">
-                <div className="font-bold text-3xl text-metacart-purple">Instant</div>
+                <div className="font-bold text-3xl text-metacart-blue">Instant</div>
                 <div className="text-sm text-muted-foreground">Settlements</div>
               </div>
               <div className="text-center">
-                <div className="font-bold text-3xl text-metacart-purple">Global</div>
+                <div className="font-bold text-3xl text-metacart-blue">Global</div>
                 <div className="text-sm text-muted-foreground">Marketplace</div>
               </div>
             </div>

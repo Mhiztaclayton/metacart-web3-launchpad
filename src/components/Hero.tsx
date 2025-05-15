@@ -28,22 +28,22 @@ const Hero = () => {
             </div>
             
             <div className="mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
-              <span className="text-sm bg-metacart-soft-purple/50 px-3 py-1.5 rounded-full">Sui Blockchain</span>
-              <span className="text-sm bg-metacart-soft-blue/50 px-3 py-1.5 rounded-full">Sui Wallet</span>
-              <span className="text-sm bg-metacart-soft-purple/50 px-3 py-1.5 rounded-full">USDC</span>
-              <span className="text-sm bg-metacart-soft-blue/50 px-3 py-1.5 rounded-full">NFT Receipts</span>
+              <span className="text-sm bg-metacart-soft-blue/50 px-3 py-1.5 rounded-full">Sui Blockchain</span>
+              <span className="text-sm bg-metacart-soft-indigo/50 px-3 py-1.5 rounded-full">Sui Wallet</span>
+              <span className="text-sm bg-metacart-soft-blue/50 px-3 py-1.5 rounded-full">USDC</span>
+              <span className="text-sm bg-metacart-soft-indigo/50 px-3 py-1.5 rounded-full">NFT Receipts</span>
             </div>
           </div>
           
           <div className="md:w-1/2 flex justify-center">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-metacart-purple/20 to-metacart-blue-sky/20 rounded-full blur-3xl animate-pulse-soft"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-metacart-blue/20 to-metacart-blue-sky/20 rounded-full blur-3xl animate-pulse-soft"></div>
               <div className="relative animate-float">
-                <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-metacart-purple to-metacart-blue-sky rounded-full flex items-center justify-center">
+                <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-metacart-blue to-metacart-blue-sky rounded-full flex items-center justify-center">
                   <div className="w-56 h-56 md:w-72 md:h-72 bg-white rounded-full flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-metacart-soft-purple to-metacart-soft-blue opacity-50 animate-spin-slow"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-metacart-soft-blue to-metacart-soft-indigo opacity-50 animate-spin-slow"></div>
                     <div className="z-10 flex flex-col items-center">
-                      <ShoppingCart size={64} className="text-metacart-purple mb-3" />
+                      <ShoppingCart size={64} className="text-metacart-blue mb-3" />
                       <div className="font-bold text-lg">MetaCart NFT</div>
                       <div className="text-xs text-muted-foreground">#001</div>
                     </div>
@@ -56,12 +56,12 @@ const Hero = () => {
                     <span className="text-xs font-bold">SUI</span>
                   </div>
                 </div>
-                <div className="absolute -left-6 top-1/4 w-10 h-10 bg-metacart-purple rounded-full flex items-center justify-center animate-float" style={{animationDelay: "1.5s"}}>
+                <div className="absolute -left-6 top-1/4 w-10 h-10 bg-metacart-blue rounded-full flex items-center justify-center animate-float" style={{animationDelay: "1.5s"}}>
                   <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
                     <span className="text-xs font-bold">$</span>
                   </div>
                 </div>
-                <div className="absolute -bottom-2 left-1/3 w-8 h-8 bg-metacart-vivid-purple rounded-full flex items-center justify-center animate-float" style={{animationDelay: "2s"}}>
+                <div className="absolute -bottom-2 left-1/3 w-8 h-8 bg-metacart-vivid-blue rounded-full flex items-center justify-center animate-float" style={{animationDelay: "2s"}}>
                   <div className="w-5 h-5 bg-white rounded-full"></div>
                 </div>
               </div>
@@ -72,7 +72,7 @@ const Hero = () => {
         <div className="mt-16 text-center">
           <a 
             href="#how-it-works" 
-            className="inline-flex items-center gap-2 text-metacart-purple hover:text-metacart-purple-tertiary transition-colors"
+            className="inline-flex items-center gap-2 text-metacart-blue hover:text-metacart-blue-tertiary transition-colors"
           >
             Learn how it works <ArrowRight size={16} />
           </a>
@@ -80,8 +80,8 @@ const Hero = () => {
       </div>
       
       {/* Abstract shapes for background */}
-      <div className="absolute top-20 right-0 w-1/3 h-1/3 bg-metacart-soft-purple/30 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-10 w-1/4 h-1/4 bg-metacart-soft-blue/20 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 right-0 w-1/3 h-1/3 bg-metacart-soft-blue/30 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-10 w-1/4 h-1/4 bg-metacart-soft-indigo/20 rounded-full blur-3xl"></div>
     </section>
   );
 };

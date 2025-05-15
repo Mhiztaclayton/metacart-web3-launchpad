@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -65,25 +64,23 @@ export default {
 				},
 				// MetaCart Custom Colors
 				metacart: {
-					purple: {
-						DEFAULT: '#9b87f5',
-						secondary: '#7E69AB',
-						tertiary: '#6E59A5',
-						dark: '#1A1F2C',
-						light: '#D6BCFA',
+					blue: {
+						DEFAULT: '#3B82F6',
+						secondary: '#2563EB',
+						tertiary: '#1D4ED8',
+						dark: '#1E3A8A',
+						light: '#BFDBFE',
+						bright: '#60A5FA',
+						sky: '#7DD3FC',
 					},
-					gray: '#8E9196',
+					gray: '#64748B',
 					soft: {
-						purple: '#E5DEFF',
-						blue: '#D3E4FD',
+						blue: '#DBEAFE',
+						indigo: '#E0E7FF',
 					},
 					vivid: {
-						purple: '#8B5CF6',
+						blue: '#2563EB',
 					},
-					blue: {
-						bright: '#1EAEDB',
-						sky: '#33C3F0',
-					}
 				},
 			},
 			borderRadius: {
