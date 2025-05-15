@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingCart, Wallet, FileText } from 'lucide-react';
 
@@ -25,7 +24,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-20 px-4 bg-gradient-to-b from-white to-metacart-soft-blue/20">
+    <section id="how-it-works" className="py-20 px-4 bg-gradient-to-b from-background to-metacart-soft-blue/20">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="section-title">How It Works</h2>

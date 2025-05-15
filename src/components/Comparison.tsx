@@ -25,7 +25,7 @@ const Comparison = () => {
     },
     {
       feature: "Payout Speed",
-      metaCart: "Instant (on delivery)",
+      metaCart: "1-3 days (after delivery)",
       traditional: "7-14 days"
     }
   ];

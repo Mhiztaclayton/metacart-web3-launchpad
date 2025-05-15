@@ -8,7 +8,7 @@
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
 
-    --card: 0 0% 100%;
+    --card: 205 40% 96%;
     --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
@@ -50,7 +50,7 @@
 
 @layer components {
   .glass-card {
-    @apply bg-white/70 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg;
+    @apply bg-card/80 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg;
   }
   
   .gradient-text {
