@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,26 +63,38 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// MetaCart Custom Colors
+				// MetaCart Custom Colors - Updated with new color palette
 				metacart: {
+					indigo: '#5B2EFF', // Primary - Electric Indigo
+					mint: '#2EF5A7', // Secondary - Mint Green
+					yellow: '#FFF176', // Accent - Soft Yellow
 					blue: {
-						DEFAULT: '#3B82F6',
-						secondary: '#2563EB',
-						tertiary: '#1D4ED8',
-						dark: '#1E3A8A',
-						light: '#BFDBFE',
-						bright: '#60A5FA',
-						sky: '#7DD3FC',
+						DEFAULT: '#5B2EFF', // Primary - Electric Indigo
+						secondary: '#4924D6', // Slightly darker indigo
+						tertiary: '#3E1FB3', // Even darker indigo
+						dark: '#0A0A1F', // Background - Midnight Blue
+						light: '#7D56FF', // Lighter indigo
+						bright: '#9280FF', // Even lighter indigo
+						sky: '#B0A5FF', // Pastel indigo
 					},
-					gray: '#64748B',
+					gray: '#B0B3C4', // Text (Muted) - Cool Gray
+					dark: '#0A0A1F', // Background - Midnight Blue
+					card: '#1C1C2E', // Card background
 					soft: {
-						blue: '#DBEAFE',
-						indigo: '#E0E7FF',
+						indigo: '#D2CFFF', // Soft indigo
+						mint: '#C1FFE4', // Soft mint
 					},
-					vivid: {
-						blue: '#2563EB',
+					glow: {
+						indigo: 'rgba(91, 46, 255, 0.5)', // Glow for indigo
+						mint: 'rgba(46, 245, 167, 0.5)', // Glow for mint
 					},
 				},
+			},
+			fontFamily: {
+				sora: ['Sora', 'sans-serif'],
+				orbitron: ['Orbitron', 'sans-serif'],
+				inter: ['Inter', 'sans-serif'],
+				dmsans: ['DM Sans', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -142,6 +155,14 @@ export default {
 						opacity: '1',
 						transform: 'translateY(0)'
 					}
+				},
+				'glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 10px rgba(91, 46, 255, 0.5)'
+					},
+					'50%': {
+						boxShadow: '0 0 20px rgba(91, 46, 255, 0.8)'
+					}
 				}
 			},
 			animation: {
@@ -150,7 +171,8 @@ export default {
 				'float': 'float 6s ease-in-out infinite',
 				'pulse-soft': 'pulse-soft 3s ease-in-out infinite',
 				'spin-slow': 'spin-slow 15s linear infinite',
-				'fade-in': 'fade-in 0.5s ease-out forwards'
+				'fade-in': 'fade-in 0.5s ease-out forwards',
+				'glow': 'glow 2s ease-in-out infinite'
 			}
 		}
 	},

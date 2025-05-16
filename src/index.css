@@ -1,37 +1,42 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
+    --background: 240 58% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 223 47% 15%;
-    --card-foreground: 210 40% 98%;
+    --card: 240 38% 15%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 222 47% 11%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 240 38% 8%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 221 83% 53%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 255 100% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 223 47% 20%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 156 90% 57%;
+    --secondary-foreground: 240 58% 8%;
 
-    --muted: 223 47% 20%;
-    --muted-foreground: 215 16% 75%;
+    --muted: 240 20% 25%;
+    --muted-foreground: 220 10% 70%;
 
-    --accent: 221 83% 25%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 50 100% 73%;
+    --accent-foreground: 240 58% 8%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 216 34% 25%;
-    --input: 216 34% 25%;
-    --ring: 221 83% 53%;
+    --border: 240 20% 20%;
+    --input: 240 20% 20%;
+    --ring: 255 100% 60%;
 
     --radius: 0.75rem;
   }
@@ -43,42 +48,46 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-metacart-dark text-foreground font-inter;
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sora;
   }
 }
 
 @layer components {
   .glass-card {
-    @apply bg-card/80 backdrop-blur-md rounded-2xl border border-white/10 shadow-lg;
+    @apply bg-metacart-card/80 backdrop-blur-md rounded-2xl border border-white/10 shadow-lg;
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text;
+    @apply bg-gradient-to-r from-metacart-indigo to-metacart-mint text-transparent bg-clip-text;
   }
 
   .feature-card {
-    @apply glass-card p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    @apply glass-card p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-metacart-indigo/20 hover:border-metacart-indigo/40;
   }
   
   .step-card {
-    @apply relative glass-card p-6 flex flex-col items-center transition-all duration-300 hover:shadow-xl;
+    @apply relative glass-card p-6 flex flex-col items-center transition-all duration-300 hover:shadow-xl border border-metacart-indigo/20;
   }
   
   .btn-primary {
-    @apply bg-gradient-to-r from-blue-500 to-blue-700 text-white font-medium py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
+    @apply bg-metacart-mint text-metacart-dark font-medium py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:shadow-metacart-glow-mint transition-all duration-300 hover:-translate-y-1 uppercase tracking-wider;
   }
   
   .btn-secondary {
-    @apply bg-secondary text-blue-400 border border-blue-500 font-medium py-3 px-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300;
+    @apply bg-metacart-card text-metacart-mint border border-metacart-mint font-medium py-3 px-6 rounded-lg shadow-sm hover:shadow-md hover:shadow-metacart-glow-mint transition-all duration-300 uppercase tracking-wider;
   }
   
   .wallet-btn {
-    @apply flex items-center bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
+    @apply flex items-center bg-metacart-indigo text-white font-medium py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:shadow-metacart-glow-indigo hover:-translate-y-1 transition-all duration-300 uppercase tracking-wider;
   }
   
   .nav-link {
-    @apply text-foreground/80 hover:text-blue-400 transition-colors duration-200;
+    @apply text-foreground/80 hover:text-metacart-mint transition-colors duration-200;
   }
   
   .section-title {
@@ -87,5 +96,13 @@
   
   .section-subtitle {
     @apply text-lg text-muted-foreground mb-8 max-w-3xl mx-auto;
+  }
+  
+  .neon-border {
+    @apply border border-metacart-mint shadow-md shadow-metacart-glow-mint;
+  }
+  
+  .neon-border-indigo {
+    @apply border border-metacart-indigo shadow-md shadow-metacart-glow-indigo;
   }
 }
