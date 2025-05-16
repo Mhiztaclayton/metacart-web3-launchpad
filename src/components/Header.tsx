@@ -34,41 +34,41 @@ export default function Header() {
         isScrolled ? "bg-card/90 backdrop-blur-md shadow-md border-b border-white/5" : "bg-transparent"
       )}
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <a href="#" className="flex items-center">
             <ShoppingCart 
-              className="h-8 w-8 text-metacart-blue mr-2" 
+              className="h-7 w-7 text-metacart-mint mr-2" 
               strokeWidth={2}
             />
-            <span className="font-bold text-2xl">MetaCart</span>
+            <span className="font-bold text-xl md:text-2xl">MetaCart</span>
           </a>
-          <span className="text-xs bg-metacart-blue/20 px-2 py-1 rounded-md ml-2 hidden md:block">
+          <span className="text-xs bg-metacart-indigo/20 text-metacart-mint px-2 py-1 rounded-md ml-2 hidden md:block">
             Web3 Dropshipping
           </span>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
-          <a href="#" className="nav-link font-medium">Home</a>
-          <a href="#how-it-works" className="nav-link font-medium">How It Works</a>
-          <a href="#buyers" className="nav-link font-medium">For Buyers</a>
-          <a href="#vendors" className="nav-link font-medium">For Vendors</a>
-          <a href="#faq" className="nav-link font-medium">FAQ</a>
-          <a href="#contact" className="nav-link font-medium">Contact</a>
+        <nav className="hidden md:flex items-center space-x-6">
+          <a href="#" className="nav-link font-medium text-sm">Home</a>
+          <a href="#how-it-works" className="nav-link font-medium text-sm">How It Works</a>
+          <a href="#buyers" className="nav-link font-medium text-sm">For Buyers</a>
+          <a href="#vendors" className="nav-link font-medium text-sm">For Vendors</a>
+          <a href="#faq" className="nav-link font-medium text-sm">FAQ</a>
+          <a href="#contact" className="nav-link font-medium text-sm">Contact</a>
         </nav>
 
         {/* CTA Buttons - Desktop */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-3">
           <Button
             variant="outline"
-            className="wallet-btn bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white"
+            className="wallet-btn bg-gradient-to-r from-metacart-indigo to-blue-600 hover:from-metacart-indigo/90 hover:to-blue-700 text-white text-sm py-2"
             onClick={() => console.log("Connect wallet")}
           >
-            <Wallet className="h-4 w-4 mr-2" /> Connect Wallet
+            <Wallet className="h-4 w-4 mr-1.5" /> Connect
           </Button>
           <Button 
-            className="btn-primary"
+            className="btn-primary text-sm py-2"
             onClick={() => console.log("Start selling")}
           >
             Start Selling
@@ -88,7 +88,7 @@ export default function Header() {
       {/* Mobile Navigation Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-card/95 backdrop-blur-md shadow-lg absolute top-full left-0 w-full py-4 animate-fade-in border-t border-white/5">
-          <div className="container mx-auto flex flex-col space-y-4">
+          <div className="container mx-auto px-4 flex flex-col space-y-3">
             <a href="#" className="nav-link font-medium p-2" onClick={toggleMenu}>Home</a>
             <a href="#how-it-works" className="nav-link font-medium p-2" onClick={toggleMenu}>How It Works</a>
             <a href="#buyers" className="nav-link font-medium p-2" onClick={toggleMenu}>For Buyers</a>
@@ -96,10 +96,10 @@ export default function Header() {
             <a href="#faq" className="nav-link font-medium p-2" onClick={toggleMenu}>FAQ</a>
             <a href="#contact" className="nav-link font-medium p-2" onClick={toggleMenu}>Contact</a>
             
-            <div className="flex flex-col space-y-3 pt-4">
+            <div className="flex flex-col space-y-3 pt-3">
               <Button
                 variant="outline"
-                className="wallet-btn bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white justify-center"
+                className="wallet-btn bg-gradient-to-r from-metacart-indigo to-blue-600 hover:from-metacart-indigo/90 hover:to-blue-700 text-white justify-center"
                 onClick={() => {
                   console.log("Connect wallet");
                   toggleMenu();
